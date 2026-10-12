@@ -1,0 +1,1150 @@
+[2023-07-12 16:13:51] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:13:51] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:14:58] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:14:58] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:19:41] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:19:41] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:37] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:37] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:37] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:38] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:38] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:47] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:47] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:48] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:48] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:49] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:49] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:43:49] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:43:49] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:54:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:54:42] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:55:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:55:37] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:58:54] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:58:54] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:58:54] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:58:54] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:58:54] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:58:54] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:58:54] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:58:54] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:58:55] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:58:55] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 16:58:55] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 16:58:55] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:05:55] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:05:55] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:06:17] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:06:17] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:06:19] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:06:19] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:12:26] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:12:26] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:33:30] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:33:30] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:45:31] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:45:31] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 17:53:47] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 17:53:47] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 18:08:23] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 18:08:23] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 18:54:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 18:54:42] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 18:54:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 18:54:42] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 19:03:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 19:03:42] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 20:14:34] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 20:14:34] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 20:15:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 20:15:42] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 20:15:55] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 20:15:55] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 20:16:00] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 20:16:00] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 20:16:01] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 20:16:01] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-12 21:55:58] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-12 21:55:58] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 00:00:58] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 00:00:58] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 01:05:01] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 01:05:01] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 01:05:01] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 01:05:01] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:37] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:38] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:38] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:39] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:39] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:39] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:39] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:40] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:40] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:41] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:41] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:41] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:41] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:42] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:43] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:43] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 02:42:43] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 02:42:43] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2023-07-13 03:56:01] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('Call to a membe...', Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/app/Exceptions/Handler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2023-07-13 03:56:01] laravel.ERROR: Call to a member function define() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function define() on null at /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/config/database/factories/ModelFactory.php:17)
+[stacktrace]
+#0 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /home/u361002960/domains/cyberdevfc.com/public_html/mitienda/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
