@@ -2,8 +2,8 @@
 @section('title', __('lang_v1.login'))
 
 @section('content')
-    <div class="login-form col-md-12 col-xs-12 right-col-content">
-        <p class="form-header text-white">@lang('lang_v1.login')</p>
+    <div class="auth-form">
+        <h1 class="auth-title">@lang('lang_v1.login')</h1>
         <form method="POST" action="{{ route('login') }}" id="login-form">
             {{ csrf_field() }}
             <div class="form-group has-feedback {{ $errors->has('username') ? ' has-error' : '' }}">

@@ -1372,4 +1372,7 @@ return [
     'sources' => 'Sources',
     'stripe_secret_key' => 'Stripe secret key',
     'stripe_public_key' => 'Stripe public key',
+    'next' => 'Next',
+    'previous' => 'Previous',
+    'step' => 'Step',
 ];

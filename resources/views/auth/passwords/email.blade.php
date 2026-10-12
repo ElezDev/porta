@@ -3,7 +3,8 @@
 @section('title', __('lang_v1.reset_password'))
 
 @section('content')
-<div class="login-form col-md-12 col-xs-12 right-col-content">
+<div class="auth-form">
+    <h1 class="auth-title">@lang('lang_v1.reset_password')</h1>
     <form  method="POST" action="{{ route('password.email') }}">
         {{ csrf_field() }}
          <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">

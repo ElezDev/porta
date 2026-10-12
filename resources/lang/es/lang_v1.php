@@ -1314,4 +1314,7 @@ return [
 "invoice_payment"=>"Pago de la factura",
 "payment_for_invoice_no"=>"Pago por número de factura",
 "pending_shipments"=>"Envíos pendientes",
+"next"=>"Siguiente",
+"previous"=>"Atrás",
+"step"=>"Paso",
 ];

@@ -1,20 +1,109 @@
 @extends('layouts.app')
 @section('title', __('home.home'))
 
+@section('css')
+@php
+    \Carbon::setLocale(app()->getLocale());
+    $today = ucfirst(\Carbon::now()->translatedFormat('l, d \d\e F \d\e Y'));
+    $user_name = trim(Session::get('user.first_name') . ' ' . Session::get('user.last_name'));
+@endphp
+<style type="text/css">
+    /* Elegant home hero */
+    .content-wrapper .content-header-custom.home-hero {
+        background: linear-gradient(135deg, #162a56 0%, #1e3f8f 48%, #1572E8 100%) !important;
+        padding: 24px 26px 118px !important;
+        border-radius: 0 0 22px 22px;
+        box-shadow: 0 18px 40px -22px rgba(21, 114, 232, 0.75);
+    }
+    .content-wrapper .content-custom.home-dashboard {
+        margin-top: -118px !important;
+    }
+    .home-hero-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .home-hero-eyebrow {
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 11px;
+        font-weight: 700;
+        opacity: .75;
+        margin-bottom: 4px;
+    }
+    .home-hero-title {
+        margin: 0 0 6px !important;
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff !important;
+        line-height: 1.25;
+    }
+    .home-hero-meta {
+        margin: 0;
+        font-size: 13.5px;
+        opacity: .92;
+        color: #fff;
+    }
+    .home-hero-meta > i {
+        margin-right: 6px;
+    }
+    .home-hero-badge {
+        display: inline-block;
+        margin-left: 12px;
+        padding: 2px 12px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.18);
+        font-weight: 600;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+    .home-hero-badge i {
+        margin-right: 4px;
+    }
+    .home-hero-illustration {
+        font-size: 88px;
+        line-height: 1;
+        opacity: .16;
+    }
+    /* Subtle card hover on the dashboard */
+    .home-dashboard .info-box-new-style {
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .home-dashboard .info-box-new-style:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 28px -14px rgba(16, 24, 40, 0.28) !important;
+    }
+    @media (max-width: 767px) {
+        .home-hero-illustration { display: none; }
+        .home-hero-title { font-size: 20px; }
+    }
+</style>
+@stop
+
 @section('content')
 
 <!-- Content Header (Page header) -->
-<section class="content-header content-header-custom">
-    <h1>{{ __('home.welcome_message', ['name' => Session::get('user.first_name')]) }}
-
-
-    <h2>Hello World hola mundoooooooo</h2>
-    </h1>
+<section class="content-header content-header-custom home-hero">
+    <div class="home-hero-inner">
+        <div>
+            <span class="home-hero-eyebrow">{{ __('home.home') }}</span>
+            <h1 class="home-hero-title">{{ __('home.welcome_message', ['name' => $user_name]) }}</h1>
+            <p class="home-hero-meta">
+                <i class="far fa-calendar-alt"></i>{{ $today }}
+                @if(Session::get('business.name'))
+                    <span class="home-hero-badge"><i class="fas fa-store"></i>{{ Session::get('business.name') }}</span>
+                @endif
+            </p>
+        </div>
+        <div class="home-hero-illustration"><i class="fas fa-chart-line"></i></div>
+    </div>
 </section>
 
 
 <!-- Main content -->
-<section class="content content-custom no-print">
+<section class="content content-custom home-dashboard no-print">
     <br>
     @if(auth()->user()->can('dashboard.data'))
         @if($is_admin)
