@@ -1186,6 +1186,7 @@ return [
 "add_edit_invoice_number"=>"Agregar editar número de factura",
 "keep_blank_to_autogenerate"=>"Dejar en blanco para generar automáticamente",
 "download_pdf"=>"Descargar PDF",
+"download_dian_xml"=>"Descargar XML DIAN",
 "attach_pdf_in_email"=>"Adjuntar factura pdf en correo electrónico",
 "send_sms_whatsapp_notification"=>"Enviar notificación por sms / whatsapp",
 "enable_sales_order"=>"Habilitar orden de venta",

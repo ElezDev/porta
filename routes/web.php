@@ -402,6 +402,7 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone'])
     Route::get('/sells/{id}', 'SellController@show');
     Route::get('/sells/{transaction_id}/print', 'SellPosController@printInvoice')->name('sell.printInvoice');
     Route::get('/download-sells/{transaction_id}/pdf', 'SellPosController@downloadPdf')->name('sell.downloadPdf');
+    Route::get('/download-sells/{id}/xml-dian', 'SellController@downloadDianXml')->name('sell.downloadDianXml');
     Route::get('/download-quotation/{id}/pdf', 'SellPosController@downloadQuotationPdf')
         ->name('quotation.downloadPdf');
     Route::get('/download-packing-list/{id}/pdf', 'SellPosController@downloadPackingListPdf')

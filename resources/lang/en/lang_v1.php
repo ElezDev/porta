@@ -1243,6 +1243,7 @@ return [
     'add_edit_invoice_number' => 'Add edit invoice number',
     'keep_blank_to_autogenerate' => 'Keep blank to auto generate',
     'download_pdf' => 'Download pdf',
+    'download_dian_xml' => 'Download DIAN XML',
     'attach_pdf_in_email' => 'Attach invoice pdf in email',
     'send_sms_whatsapp_notification' => 'Send sms/whatsapp notification',
     'enable_sales_order' => 'Enable Sales Order',

@@ -385,6 +385,10 @@ class SellController extends Controller
                                 $html .= '<li><a href="' . route('packing.downloadPdf', [$row->id]) . '" target="_blank"><i class="fas fa-print" aria-hidden="true"></i> ' . __("lang_v1.download_paking_pdf") . '</a></li>';
                             }
                         }
+
+                        if ($row->type == 'sell') {
+                            $html .= '<li><a href="' . route('sell.downloadDianXml', [$row->id]) . '" target="_blank"><i class="fas fa-file-code" aria-hidden="true"></i> ' . __("lang_v1.download_dian_xml") . '</a></li>';
+                        }
                         
                         if (auth()->user()->can("sell.view") || auth()->user()->can("direct_sell.access")) {
                             if (!empty($row->document)) {
@@ -843,6 +847,33 @@ class SellController extends Controller
                 'sales_orders',
                 'line_taxes'
             ));
+    }
+
+    /**
+     * Download the DIAN (Colombia) electronic invoice XML for a sale.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function downloadDianXml($id, \App\Utils\DianInvoiceUtil $dian_invoice_util)
+    {
+        try {
+            $result = $dian_invoice_util->generate($id);
+
+            $filename = config('dian.file_prefix') . '-' . $id . '.xml';
+
+            return response()->make($result['xml'], 200, [
+                'Content-Type' => 'application/xml; charset=UTF-8',
+                'Content-Disposition' => 'attachment; filename="' . $filename . '"',
+            ]);
+        } catch (\Exception $e) {
+            \Log::emergency("File:" . $e->getFile() . " Line:" . $e->getLine() . " Message:" . $e->getMessage());
+
+            return redirect('sells')->with('status', [
+                'success' => 0,
+                'msg' => $e->getMessage(),
+            ]);
+        }
     }
 
     /**

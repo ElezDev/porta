@@ -6,8 +6,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header content-header-custom">
     <h1>{{ __('home.welcome_message', ['name' => Session::get('user.first_name')]) }}
+
+
+    <h2>Hello World hola mundoooooooo</h2>
     </h1>
 </section>
+
+
 <!-- Main content -->
 <section class="content content-custom no-print">
     <br>
