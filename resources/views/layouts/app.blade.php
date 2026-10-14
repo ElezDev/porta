@@ -30,6 +30,7 @@
         @include('layouts.partials.css')
 
         @yield('css')
+        @include('layouts.partials.theme')
     </head>
 
     <body class="@if($pos_layout) hold-transition lockscreen @else hold-transition skin-@if(!empty(session('business.theme_color'))){{session('business.theme_color')}}@else{{'blue-light'}}@endif sidebar-mini @endif">

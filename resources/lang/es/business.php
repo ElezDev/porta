@@ -96,4 +96,7 @@
 "tax_number2"=>"Número fiscal 2",
 "is_active"=>"Activo",
 "created_by"=>"Creado por",
+"header"=>"Cabecera",
+"sidebar"=>"Menú lateral",
+"primary"=>"Primario",
 ];

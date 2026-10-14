@@ -196,5 +196,12 @@
             },
         });
     });
+
+    $('.colorpicker-component').colorpicker({ format: 'hex' });
+
+    $('#reset_theme').on('click', function() {
+        $('.colorpicker-component input').val('');
+        $('.colorpicker-component .input-group-addon i').css('background-color', 'transparent');
+    });
 </script>
 @endsection
