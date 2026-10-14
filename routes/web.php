@@ -231,7 +231,11 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
 
     //Business Locations...
     Route::post('business-location/check-location-id', 'BusinessLocationController@checkLocationId');
-    Route::resource('business-location', 'BusinessLocationController');
+
+    Route::resource('business-location', 'BusinessLocationController', [
+    'only' => ['index', 'show'],
+    'as' => 'connector.api',
+]);
 
     //Invoice layouts..
     Route::resource('invoice-layouts', 'InvoiceLayoutController');
@@ -261,7 +265,10 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
     Route::get('/cash-register/register-details', 'CashRegisterController@getRegisterDetails');
     Route::get('/cash-register/close-register/{id?}', 'CashRegisterController@getCloseRegister');
     Route::post('/cash-register/close-register', 'CashRegisterController@postCloseRegister');
-    Route::resource('cash-register', 'CashRegisterController');
+   Route::resource('cash-register', 'CashRegisterController', [
+    'only' => ['index', 'store', 'show', 'update'],
+    'as' => 'connector.api',
+]);
 
     //Import products
     Route::get('/import-products', 'ImportProductsController@index');
@@ -367,7 +374,10 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
     Route::get('bookings/get-todays-bookings', 'Restaurant\BookingController@getTodaysBookings');
     Route::resource('bookings', 'Restaurant\BookingController');
     
-    Route::resource('types-of-service', 'TypesOfServiceController');
+    Route::resource('types-of-service', 'TypesOfServiceController', [
+        'only' => ['index', 'show'],
+        'as' => 'connector.api',
+    ]);
     Route::get('sells/edit-shipping/{id}', 'SellController@editShipping');
     Route::put('sells/update-shipping/{id}', 'SellController@updateShipping');
     Route::get('shipments', 'SellController@shipments');
@@ -412,8 +422,7 @@ Route::middleware(['EcomApi'])->prefix('api/ecom')->group(function () {
 
 //common route
 Route::middleware(['auth'])->group(function () {
-    Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
-});
+    Route::get('/logout', 'Auth\LoginController@logout')->name('logout.get');});
 
 Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone'])->group(function () {
     Route::get('/load-more-notifications', 'HomeController@loadMoreNotifications');
