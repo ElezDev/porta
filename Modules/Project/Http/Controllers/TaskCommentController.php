@@ -30,7 +30,7 @@ class TaskCommentController extends Controller
      */
     public function create()
     {
-        return view('project::create');
+        return redirect()->action('\Modules\Project\Http\Controllers\ProjectController@index');
     }
 
     /**

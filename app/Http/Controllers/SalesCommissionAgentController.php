@@ -114,6 +114,17 @@ class SalesCommissionAgentController extends Controller
     }
 
     /**
+     * Show the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        return redirect()->action('\App\Http\Controllers\SalesCommissionAgentController@index');
+    }
+
+    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id

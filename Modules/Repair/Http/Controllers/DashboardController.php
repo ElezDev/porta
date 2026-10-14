@@ -49,7 +49,7 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        return view('repair::create');
+        return redirect()->action('\Modules\Repair\Http\Controllers\DashboardController@index');
     }
 
     /**
@@ -69,7 +69,7 @@ class DashboardController extends Controller
      */
     public function show($id)
     {
-        return view('repair::show');
+        return redirect()->action('\Modules\Repair\Http\Controllers\DashboardController@index');
     }
 
     /**
@@ -79,7 +79,7 @@ class DashboardController extends Controller
      */
     public function edit($id)
     {
-        return view('repair::edit');
+        return redirect()->action('\Modules\Repair\Http\Controllers\DashboardController@index');
     }
 
     /**

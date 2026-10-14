@@ -63,6 +63,17 @@ class CustomerGroupController extends Controller
     }
 
     /**
+     * Show the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        return redirect()->action('\App\Http\Controllers\CustomerGroupController@index');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

@@ -109,7 +109,7 @@ class TableController extends Controller
              abort(403, 'Unauthorized action.');
         }
 
-        return view('restaurant.table.show');
+        return redirect()->action('\App\Http\Controllers\Restaurant\TableController@index');
     }
 
     /**

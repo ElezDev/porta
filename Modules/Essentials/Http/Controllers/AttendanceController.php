@@ -285,6 +285,16 @@ class AttendanceController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     * @param  int  $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        return redirect()->action('\Modules\Essentials\Http\Controllers\AttendanceController@index');
+    }
+
+    /**
      * Remove the specified resource from storage.
      * @return Response
      */
@@ -468,7 +478,13 @@ class AttendanceController extends Controller
             abort(403, 'Unauthorized action.');
         }
 
-        $date = $this->moduleUtil->uf_date(request()->input('date'));
+        $date = request()->input('date');
+
+        if (empty($date)) {
+            return view('essentials::attendance.attendance_by_shift_data')->with(['attendance_by_shift' => []]);
+        }
+
+        $date = $this->moduleUtil->uf_date($date);
 
         $attendance_data = EssentialsAttendance::where('business_id', $business_id)
                                 ->whereDate('clock_in_time', $date)
@@ -520,6 +536,10 @@ class AttendanceController extends Controller
 
         $start_date = request()->input('start_date');
         $end_date = request()->input('end_date');
+
+        if (empty($start_date) || empty($end_date)) {
+            return view('essentials::attendance.attendance_by_date_data')->with(['attendance_by_date' => []]);
+        }
 
         $attendance_data = EssentialsAttendance::where('business_id', $business_id)
                                 ->whereDate('clock_in_time', '>=', $start_date)

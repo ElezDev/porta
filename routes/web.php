@@ -18,6 +18,25 @@ Route::get('__smoke_login', function () {
     return redirect('/home');
 });
 
+// The knox/pesapal package registers the two routes below globally from its
+// service provider. Override them here so that a direct request without the
+// gateway parameters does not raise a 500.
+Route::get('pesapal-callback', function () {
+    if (empty(request('pesapal_transaction_tracking_id')) && empty(request('pesapal_merchant_reference'))) {
+        return redirect('/');
+    }
+
+    return app(\Knox\Pesapal\PesapalAPIController::class)->handleCallback();
+})->name('pesapal-callback');
+
+Route::get('pesapal-ipn', function () {
+    if (empty(request('pesapal_notification_type')) || empty(request('pesapal_merchant_reference')) || empty(request('pesapal_transaction_tracking_id'))) {
+        return response('', 200);
+    }
+
+    return app(\Knox\Pesapal\PesapalAPIController::class)->handleIPN();
+})->name('pesapal-ipn');
+
 Route::middleware(['setData'])->group(function () {
     Route::get('/', function () {
         return view('welcome');

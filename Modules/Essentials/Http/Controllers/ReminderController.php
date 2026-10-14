@@ -137,6 +137,16 @@ class ReminderController extends Controller
     }
 
     /**
+     * Show the form for editing the specified resource.
+     * @param  int  $id
+     * @return Response
+     */
+    public function edit($id)
+    {
+        return redirect()->action('\Modules\Essentials\Http\Controllers\ReminderController@index');
+    }
+
+    /**
      * Update the specified resource in storage.
      * @param  Request $request
      * @return Response

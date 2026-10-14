@@ -163,7 +163,7 @@ class OrderController extends Controller
                 'msg' => trans("lang_v1.success"),
                 'html_content' => $html_content
             ];
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $output = [
                 'success' => 0,
                 'msg' => trans("messages.something_went_wrong")

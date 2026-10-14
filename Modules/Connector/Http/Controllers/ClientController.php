@@ -47,7 +47,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        return view('connector::create');
+        return redirect()->action('\Modules\Connector\Http\Controllers\ClientController@index');
     }
 
     /**

@@ -163,7 +163,7 @@ class ModifierSetsController extends Controller
      */
     public function show()
     {
-        return view('restaurant.modifier_sets.show');
+        return redirect()->action('\App\Http\Controllers\Restaurant\ModifierSetsController@index');
     }
 
     /**

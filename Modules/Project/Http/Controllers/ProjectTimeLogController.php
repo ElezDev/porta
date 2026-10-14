@@ -126,7 +126,19 @@ class ProjectTimeLogController extends Controller
                 ->make(true);
         }
 
-        return view('project::time_logs.index');
+        $business_id = request()->session()->get('user.business_id');
+        $project_id = request()->get('project_id');
+
+        if (empty($project_id)) {
+            return redirect()->action('\Modules\Project\Http\Controllers\ProjectController@index');
+        }
+
+        $is_admin = $this->commonUtil->is_admin(auth()->user(), $business_id);
+        $is_lead = $this->projectUtil->isProjectLead(auth()->user()->id, $project_id);
+        $is_lead_or_admin = ($is_admin || $is_lead);
+        $can_crud_timelog = $this->projectUtil->canMemberCrudTimelog($business_id, auth()->user()->id, $project_id);
+
+        return view('project::time_logs.index')->with(compact('can_crud_timelog', 'is_lead_or_admin'));
     }
 
     /**

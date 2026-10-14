@@ -24,7 +24,7 @@
     function makePayment() {
         FlutterwaveCheckout({
             public_key: "{{env('FLUTTERWAVE_PUBLIC_KEY')}}",
-            tx_ref: "{{str_random(15)}}", //generate randomly
+            tx_ref: "{{\Illuminate\Support\Str::random(15)}}", //generate randomly
             amount: {{$package->price}},
             currency: "{{$currency_code}}",
             payment_options: "card, mobilemoneyghana, ussd",

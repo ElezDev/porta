@@ -198,25 +198,10 @@ class SellReturnController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function create()
-    // {
-    //     if (!auth()->user()->can('sell.create')) {
-    //         abort(403, 'Unauthorized action.');
-    //     }
-
-    //     $business_id = request()->session()->get('user.business_id');
-
-    //     //Check if subscribed or not
-    //     if (!$this->moduleUtil->isSubscribed($business_id)) {
-    //         return $this->moduleUtil->expiredResponse(action('SellReturnController@index'));
-    //     }
-
-    //     $business_locations = BusinessLocation::forDropdown($business_id);
-    //     //$walk_in_customer = $this->contactUtil->getWalkInCustomer($business_id);
-
-    //     return view('sell_return.create')
-    //         ->with(compact('business_locations'));
-    // }
+    public function create()
+    {
+        return redirect()->action([\App\Http\Controllers\SellReturnController::class, 'index']);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -309,6 +294,17 @@ class SellReturnController extends Controller
     }
 
     /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        return redirect()->action('\App\Http\Controllers\SellReturnController@index');
+    }
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -340,6 +336,10 @@ class SellReturnController extends Controller
             $sells->where('created_by', request()->session()->get('user.id'));
         }
         $sell = $query->first();
+
+        if (empty($sell)) {
+            abort(404);
+        }
 
         foreach ($sell->sell_lines as $key => $value) {
             if (!empty($value->sub_unit_id)) {

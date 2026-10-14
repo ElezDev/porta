@@ -16,6 +16,10 @@ class EcomApi
      */
     public function handle($request, Closure $next)
     {
+        if (!class_exists(\Modules\Ecommerce\Entities\EcomApiSetting::class)) {
+            abort(403, 'Ecommerce module is not installed.');
+        }
+
         $token = $request->header('API-TOKEN');
         $is_api_settings_exists = EcomApiSetting::where('api_token', $token)
                                             // ->where('shop_domain', $shop_domain)

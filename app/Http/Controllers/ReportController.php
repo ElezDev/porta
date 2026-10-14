@@ -59,12 +59,29 @@ class ReportController extends Controller
     }
 
 
+    /**
+     * Show the opening stock report.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getOpeningStock()
+    {
+        return redirect()->action([\App\Http\Controllers\ReportController::class, 'getStockReport'], request()->query());
+    }
+
     public function getStockBySellingPrice(Request $request)
     {
         $business_id = $request->session()->get('user.business_id');
         $start_date = $request->get('start_date');
         $end_date = $request->get('end_date');
         $location_id = $request->get('location_id');
+
+        if (empty($start_date) || empty($end_date)) {
+            return [
+                'opening_stock_by_sp' => [],
+                'closing_stock_by_sp' => []
+            ];
+        }
 
         $day_before_start_date = \Carbon::createFromFormat('Y-m-d', $start_date)->subDay()->format('Y-m-d');
 

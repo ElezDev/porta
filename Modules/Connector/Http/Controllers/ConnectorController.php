@@ -14,7 +14,7 @@ class ConnectorController extends Controller
      */
     public function index()
     {
-        return view('connector::index');
+        return redirect()->action('\Modules\Connector\Http\Controllers\ClientController@index');
     }
 
     /**

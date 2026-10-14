@@ -92,7 +92,7 @@ class ProductModifierSetController extends Controller
     public function add_selected_modifiers(Request $request)
     {
         $business_id = $request->session()->get('user.business_id');
-        $selected = $request->input('selected');
+        $selected = (array) $request->input('selected', []);
         $index = $request->input('index');
 
         $quantity = $request->input('quantity', 1);

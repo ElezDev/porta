@@ -171,9 +171,15 @@ class PayrollController extends Controller
         }
 
         $employee_id = request()->input('employee_id');
-        $month_year_arr = explode('/', request()->input('month_year'));
+        $month_year = request()->input('month_year');
+
+        if (empty($employee_id) || empty($month_year)) {
+            return redirect()->action('\Modules\Essentials\Http\Controllers\PayrollController@index');
+        }
+
+        $month_year_arr = explode('/', $month_year);
         $month = $month_year_arr[0];
-        $year = $month_year_arr[1];
+        $year = $month_year_arr[1] ?? $month_year_arr[0];
 
         $transaction_date = $year . '-' . $month . '-01';
 

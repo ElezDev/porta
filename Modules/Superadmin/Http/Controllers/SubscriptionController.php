@@ -78,6 +78,15 @@ class SubscriptionController extends BaseController
     }
 
     /**
+     * Show the form for creating a new resource.
+     * @return Response
+     */
+    public function create()
+    {
+        return redirect()->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
+    }
+
+    /**
      * Show pay form for a new package.
      * @return Response
      */
@@ -272,6 +281,37 @@ class SubscriptionController extends BaseController
     }
 
     /**
+     * Callback from the pesapal payment gateway for a package subscription.
+     *
+     * @return Response
+     */
+    public function pesapalCallback($package_id, Request $request)
+    {
+        $pesapal_session = $request->session()->get('pesapal');
+        $merchant_reference = $request->input('pesapal_merchant_reference', $request->input('merchant_reference'));
+
+        if (empty($pesapal_session) || empty($merchant_reference)) {
+            return redirect()
+                ->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
+        }
+
+        try {
+            DB::beginTransaction();
+
+            $transaction_id = $request->input('pesapal_transaction_tracking_id', $request->input('tracking_id'));
+            $this->confirm_pesapal($transaction_id, $request);
+
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            \Log::emergency("File:" . $e->getFile() . "Line:" . $e->getLine() . "Message:" . $e->getMessage());
+        }
+
+        return redirect()
+            ->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
+    }
+
+    /**
      * Stripe payment method
      * @return Response
      */
@@ -407,7 +447,7 @@ class SubscriptionController extends BaseController
                     'qty' => 1
                 ]
             ];
-        $data['invoice_id'] = str_random(5);
+        $data['invoice_id'] = \Illuminate\Support\Str::random(5);
         $data['invoice_description'] = "Order #{$data['invoice_id']} Invoice";
         $data['return_url'] = action('\Modules\Superadmin\Http\Controllers\SubscriptionController@confirm', [$package_id]) . '?gateway=paypal';
         $data['cancel_url'] = action('\Modules\Superadmin\Http\Controllers\SubscriptionController@pay', [$package_id]);
@@ -467,7 +507,16 @@ class SubscriptionController extends BaseController
      */
     public function postPaymentPaystackCallback()
     {   
+        if (empty(request()->query('trxref')) && empty(request()->query('reference'))) {
+            return redirect()->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
+        }
+
         $payment = Paystack::getPaymentData();
+
+        if (empty($payment['data']['metadata'])) {
+            return redirect()->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
+        }
+
         $business_id = $payment['data']['metadata']['business_id'];
         $package_id = $payment['data']['metadata']['package_id'];
         $gateway = $payment['data']['metadata']['gateway'];
@@ -495,6 +544,10 @@ class SubscriptionController extends BaseController
      */
     public function postFlutterwavePaymentCallback(Request $request)
     {
+        if (empty($request->get('transaction_id'))) {
+            return redirect()->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
+        }
+
         $url = "https://api.flutterwave.com/v3/transactions/".$request->get('transaction_id')."/verify";
         $header = [
             "Content-Type: application/json",
@@ -517,7 +570,12 @@ class SubscriptionController extends BaseController
         curl_close($curl);
 
         $payment = json_decode($response, true);
-        
+
+        if (empty($payment['status'])) {
+            return redirect()->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index')
+                ->with('status', ['success' => 0, 'msg' => __('messages.something_went_wrong')]);
+        }
+
         if ($payment['status'] == 'success') {
             //Add subscription
             $business_id = $payment['data']['meta']['business_id'];
@@ -570,6 +628,17 @@ class SubscriptionController extends BaseController
 
         return view('superadmin::subscription.show_subscription_modal')
             ->with(compact('subscription', 'system'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        return redirect()->action('\Modules\Superadmin\Http\Controllers\SubscriptionController@index');
     }
 
     /**

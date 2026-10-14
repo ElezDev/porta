@@ -140,7 +140,17 @@ class InvoiceController extends Controller
                         ->make(true);
         }
 
-        return view('project::invoice.index');
+        $business_id = request()->session()->get('user.business_id');
+        $project_id = request()->get('project_id');
+
+        if (empty($project_id)) {
+            return redirect()->action('\Modules\Project\Http\Controllers\ProjectController@index');
+        }
+
+        $project = Project::where('business_id', $business_id)
+                        ->findOrFail($project_id);
+
+        return view('project::invoice.index', compact('project'));
     }
 
     /**

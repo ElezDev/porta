@@ -1209,6 +1209,10 @@ class ContactController extends Controller
 
         $contact = Contact::find($contact_id);
 
+        if (empty($contact)) {
+            abort(404);
+        }
+
         if (!auth()->user()->can('supplier.view') && auth()->user()->can('supplier.view_own')) {
             if ($contact->created_by != auth()->user()->id) {
                 abort(403, 'Unauthorized action.');
