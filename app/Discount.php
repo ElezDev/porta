@@ -7,11 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Discount extends Model
 {
     /**
-     * The attributes that should be mutated to dates.
+     * The attributes that should be cast to native types.
      *
      * @var array
      */
-    protected $dates = ['starts_at', 'ends_at'];
+    protected $casts = [
+        'starts_at' => 'date',
+        'ends_at' => 'date',
+    ];
 
     /**
      * The attributes that aren't mass assignable.

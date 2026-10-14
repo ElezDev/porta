@@ -7,12 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class CustomerGroup extends Model
 {
     /**
-     * The attributes that should be mutated to dates.
+     * The attributes that should be cast to native types.
      *
      * @var array
      */
-    protected $dates = ['deleted_at'];
-    
+    protected $casts = [
+        'deleted_at' => 'date',
+    ];
+
     /**
      * The attributes that aren't mass assignable.
      *

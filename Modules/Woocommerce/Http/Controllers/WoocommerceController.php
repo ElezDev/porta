@@ -52,6 +52,9 @@ class WoocommerceController extends Controller
      */
     public function index()
     {
+        $tax_rates = [];
+        $woocommerce_tax_rates = [];
+
         try {
             $business_id = request()->session()->get('business.id');
 
@@ -125,6 +128,8 @@ class WoocommerceController extends Controller
                     }
                 }
             }
+        } catch (\Symfony\Component\HttpKernel\Exception\HttpException $e) {
+            throw $e;
         } catch (\Exception $e) {
             $alerts['connection_failed'] = 'Unable to connect with WooCommerce, Check API settings';
         }

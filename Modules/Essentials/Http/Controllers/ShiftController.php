@@ -91,7 +91,9 @@ class ShiftController extends Controller
      */
     public function create()
     {
-        return view('essentials::create');
+        $days = $this->moduleUtil->getDays();
+
+        return view('essentials::attendance.shift_modal')->with(compact('days'));
     }
 
     /**

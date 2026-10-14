@@ -3,12 +3,10 @@
 namespace Modules\Connector\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Routing\Router;
 use Laravel\Passport\Console\ClientCommand;
 use Laravel\Passport\Console\InstallCommand;
 use Laravel\Passport\Console\KeysCommand;
-use Mpociot\ApiDoc\Commands\GenerateDocumentation;
 
 class ConnectorServiceProvider extends ServiceProvider
 {
@@ -41,7 +39,6 @@ class ConnectorServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
-        $this->registerFactories();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
         $this->registerMiddleware($this->app['router']);
@@ -50,8 +47,7 @@ class ConnectorServiceProvider extends ServiceProvider
         $this->commands([
             InstallCommand::class,
             ClientCommand::class,
-            KeysCommand::class,
-            GenerateDocumentation::class
+            KeysCommand::class
         ]);
     }
 
@@ -133,17 +129,6 @@ class ConnectorServiceProvider extends ServiceProvider
         }
     }
 
-    /**
-     * Register an additional directory of factories.
-     * 
-     * @return void
-     */
-    public function registerFactories()
-    {
-        if (! app()->environment('production')) {
-            app(Factory::class)->load(__DIR__ . '/../Database/factories');
-        }
-    }
 
     /**
      * Get the services provided by the provider.

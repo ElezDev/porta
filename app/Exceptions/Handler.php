@@ -3,13 +3,11 @@
 namespace App\Exceptions;
 
 use App\Mail\ExceptionOccured;
-use Exception;
 use Illuminate\Auth\AuthenticationException;
-
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Mail;
-use Symfony\Component\Debug\Exception\FlattenException;
-use Symfony\Component\Debug\ExceptionHandler as SymfonyExceptionHandler;
+use Illuminate\Support\Facades\Mail;
+use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
@@ -30,12 +28,12 @@ class Handler extends ExceptionHandler
     /**
      * Report or log an exception.
      *
-     * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
-     *
-     * @param  \Exception  $exception
+     * @param  \Throwable  $exception
      * @return void
+     *
+     * @throws \Throwable
      */
-    public function report(Exception $exception)
+    public function report(Throwable $exception)
     {
         if ($this->shouldReport($exception)) {
             if (config('app.env') == 'demo') {
@@ -50,10 +48,12 @@ class Handler extends ExceptionHandler
      * Render an exception into an HTTP response.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $exception
-     * @return \Illuminate\Http\Response
+     * @param  \Throwable  $exception
+     * @return \Symfony\Component\HttpFoundation\Response
+     *
+     * @throws \Throwable
      */
-    public function render($request, Exception $exception)
+    public function render($request, Throwable $exception)
     {
         return parent::render($request, $exception);
     }
@@ -77,22 +77,20 @@ class Handler extends ExceptionHandler
     /**
      * Sends the exception email in demo server
      *
-     * @param $exception
+     * @param \Throwable $exception
      */
-    public function sendEmail(Exception $exception)
+    public function sendEmail(Throwable $exception)
     {
         try {
-            $e = FlattenException::create($exception);
+            $renderer = new HtmlErrorRenderer(true);
+            $html = $renderer->render($exception)->getAsString();
 
-            $handler = new SymfonyExceptionHandler();
-
-            $html = $handler->getHtml($e);
             $email = config('mail.username');
-            
+
             if (!empty($email)) {
                 Mail::to($email)->send(new ExceptionOccured($html));
             }
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
             dd($ex);
         }
     }

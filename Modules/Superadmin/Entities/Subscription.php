@@ -19,20 +19,9 @@ class Subscription extends Model
      * @var array
      */
     protected $casts = [
-        'package_details' => 'array'
-    ];
-
-    /**
-     * The attributes that should be mutated to dates.
-     *
-     * @var array
-     */
-    protected $dates = [
-        'start_date',
-        'end_date',
-        'created_at',
-        'updated_at',
-        'deleted_at'
+        'package_details' => 'array',
+        'start_date' => 'date',
+        'end_date' => 'date',
     ];
 
     /**

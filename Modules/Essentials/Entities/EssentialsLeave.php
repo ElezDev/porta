@@ -5,17 +5,20 @@ namespace Modules\Essentials\Entities;
 use Illuminate\Database\Eloquent\Model;
 
 
+use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 
 class EssentialsLeave extends Model
 {
     use LogsActivity;
 
-    protected static $logAttributes = ['*'];
-
-    protected static $logAttributesToIgnore = [ 'created_at', 'updated_at'];
-
-    protected static $logOnlyDirty = true;
+    public function getActivitylogOptions(): LogOptions
+    {
+        return LogOptions::defaults()
+            ->logAll()
+            ->logExcept(['created_at', 'updated_at'])
+            ->logOnlyDirty();
+    }
 
     /**
      * The attributes that aren't mass assignable.

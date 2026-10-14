@@ -56,8 +56,6 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
 
     Route::resource('brands', 'BrandController');
     
-    Route::resource('payment-account', 'PaymentAccountController');
-
     Route::resource('tax-rates', 'TaxRateController');
 
     Route::resource('units', 'UnitController');
@@ -380,7 +378,7 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
 
 Route::middleware(['EcomApi'])->prefix('api/ecom')->group(function () {
     Route::get('products/{id?}', 'ProductController@getProductsApi');
-    Route::get('categories', 'CategoryController@getCategoriesApi');
+    Route::get('categories', 'TaxonomyController@getCategoriesApi');
     Route::get('brands', 'BrandController@getBrandsApi');
     Route::post('customers', 'ContactController@postCustomersApi');
     Route::get('settings', 'BusinessController@getEcomSettings');

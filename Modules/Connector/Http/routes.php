@@ -71,17 +71,19 @@ Route::group(['middleware' => ['auth:api', 'timezone'], 'prefix' => 'connector/a
 	Route::post('update-password', 'UserController@updatePassword');
 });
 
-Route::group(['middleware' => ['auth:api', 'timezone'], 'prefix' => 'connector/api/crm', 'namespace' => 'Modules\Connector\Http\Controllers\Api\Crm'], function(){
-	
-    Route::resource('follow-ups', 'FollowUpController', ['only' => ['index', 'store', 'show', 'update']]);
+if (class_exists('Modules\Crm\Utils\CrmUtil')) {
+    Route::group(['middleware' => ['auth:api', 'timezone'], 'prefix' => 'connector/api/crm', 'namespace' => 'Modules\Connector\Http\Controllers\Api\Crm'], function(){
+    	
+        Route::resource('follow-ups', 'FollowUpController', ['only' => ['index', 'store', 'show', 'update']]);
 
-    Route::get('follow-up-resources', 'FollowUpController@getFollowUpResources');
+        Route::get('follow-up-resources', 'FollowUpController@getFollowUpResources');
 
-    Route::get('leads', 'FollowUpController@getLeads');
+        Route::get('leads', 'FollowUpController@getLeads');
 
-    Route::post('call-logs', 'CallLogsController@saveCallLogs');
+        Route::post('call-logs', 'CallLogsController@saveCallLogs');
 
-});
+    });
+}
 
 Route::group(['middleware' => ['web', 'authh', 'auth', 'SetSessionData', 'language', 'timezone', 'AdminSidebarMenu', 'CheckUserLogin'], 'namespace' => 'Modules\Connector\Http\Controllers', 'prefix' => 'connector'], function () {
 	Route::get('install', 'InstallController@index');

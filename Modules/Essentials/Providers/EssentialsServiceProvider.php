@@ -3,7 +3,6 @@
 namespace Modules\Essentials\Providers;
 
 use App\Utils\ModuleUtil;
-use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Support\Facades\View;
 
 use Illuminate\Support\ServiceProvider;
@@ -28,7 +27,6 @@ class EssentialsServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
-        $this->registerFactories();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
         view::composer(['essentials::layouts.partials.header_part',
@@ -148,17 +146,6 @@ class EssentialsServiceProvider extends ServiceProvider
         }
     }
 
-    /**
-     * Register an additional directory of factories.
-     *
-     * @return void
-     */
-    public function registerFactories()
-    {
-        if (! app()->environment('production')) {
-            app(Factory::class)->load(__DIR__ . '/../Database/factories');
-        }
-    }
 
     /**
      * Get the services provided by the provider.

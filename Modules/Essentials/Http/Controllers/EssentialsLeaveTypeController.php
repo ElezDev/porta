@@ -71,7 +71,7 @@ class EssentialsLeaveTypeController extends Controller
             abort(403, 'Unauthorized action.');
         }
 
-        return view('essentials::create');
+        return view('essentials::leave_type.create');
     }
 
     /**
