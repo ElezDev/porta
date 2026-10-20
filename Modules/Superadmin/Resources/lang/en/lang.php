@@ -100,6 +100,8 @@ return [
     'compose_message' => 'Compose Message',
     'message_history' => 'Message History',
     'pricing' => 'Pricing',
+    'pricing_subtitle' => 'Choose the plan that fits your business. You can switch anytime.',
+    'recommended' => 'Recommended',
     'register_subscribe' => 'Register & subscribe',
     'register_free' => 'Register Free',
     'registered_and_subscribed' => 'You have succefully registered & subscribed',

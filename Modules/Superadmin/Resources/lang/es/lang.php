@@ -100,6 +100,8 @@ return [
 "compose_message" => "Crear Mensaje",
 "message_history" => "Historial de mensajes",
 "pricing" => "Precios",
+"pricing_subtitle" => "Elige el plan que mejor se adapte a tu negocio. Puedes cambiarlo cuando quieras.",
+"recommended" => "Recomendado",
 "register_subscribe" => "Registrarse y suscribirse",
 "register_free" => "Registrarse Gratis",
 "registered_and_subscribed" => "Has registrado y suscrito con éxito",

@@ -66,7 +66,8 @@
         transition: color .15s ease, background-color .15s ease;
     }
     .cd-nav-links a:hover,
-    .cd-nav-links a:focus {
+    .cd-nav-links a:focus,
+    .cd-nav-links a.is-active {
         color: #fff;
         background: rgba(255, 255, 255, .06);
     }
@@ -157,7 +158,7 @@
                     @endforeach
                 @endif
                 @if(Route::has('pricing') && config('app.env') != 'demo')
-                    <li><a href="{{ action('\Modules\Superadmin\Http\Controllers\PricingController@index') }}">@lang('superadmin::lang.pricing')</a></li>
+                    <li><a href="{{ action('\Modules\Superadmin\Http\Controllers\PricingController@index') }}" class="{{ request()->routeIs('pricing') ? 'is-active' : '' }}">@lang('superadmin::lang.pricing')</a></li>
                 @endif
                 @if(Route::has('repair-status'))
                     <li><a href="{{ action('\Modules\Repair\Http\Controllers\CustomerRepairStatusController@index') }}">@lang('repair::lang.repair_status')</a></li>
