@@ -11,6 +11,7 @@ return [
     |
     */
     'register_and_get_started_in_minutes' => 'Register and Get Started in minutes',
+    'register_subtitle' => 'Complete 3 steps: business details, tax settings and your access account.',
     'business_name' => 'Business Name',
     'start_date' => 'Start Date',
     'currency' => 'Currency',

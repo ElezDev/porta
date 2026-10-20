@@ -1,6 +1,7 @@
 <?php
  return [
 "register_and_get_started_in_minutes" => "Registrarse y comenzar en minutos",
+"register_subtitle" => "Completa los 3 pasos: datos de tu empresa, impuestos y tu cuenta de acceso.",
 "business_name" => "Nombre de la empresa", /* modified */
 "start_date" => "Fecha de inicio",
 "currency" => "Moneda",

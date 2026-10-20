@@ -3,12 +3,18 @@
 
 @section('css_after')
 <style type="text/css">
-    /* Registro: usar todo el ancho disponible */
+    /* Registro: formulario organizado, ancho cómodo */
     .auth-aside { display: none; }
-    .auth-main { padding: 22px 32px; }
-    .auth-card { width: 100%; max-width: 1600px; margin: 10px auto 34px; padding: 54px 70px 50px; }
+    .auth-main { padding: 18px 24px; }
+    .auth-card { width: 100%; max-width: 980px; margin: 8px auto 28px; padding: 36px 40px 32px; }
     .auth-form-wide { display: block; }
-    .auth-form-wide .auth-title { margin-bottom: 34px; }
+    .auth-form-wide .auth-title { margin-bottom: 8px; }
+    .auth-form-wide .auth-subtitle {
+        margin: 0 0 26px;
+        color: var(--cd-muted);
+        font-size: 14.5px;
+        line-height: 1.5;
+    }
 
     /* Error summary */
     .reg-errors {
@@ -103,41 +109,55 @@
         height: auto;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        gap: 14px 48px;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     /* Section legend */
-    .auth-form-wide fieldset > legend {
+    .auth-form-wide fieldset > legend { display: none; }
+    .auth-form-wide .reg-block {
         grid-column: 1 / -1;
-        width: auto;
-        border: 0;
-        border-bottom: 1px solid var(--cd-line);
-        margin: 0 0 16px;
-        padding: 0 0 12px;
-        font-family: 'Sora', sans-serif;
-        font-size: 15.5px;
-        font-weight: 600;
-        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 4px 18px;
+        margin: 0;
+        padding: 18px 18px 6px;
+        border: 1px solid var(--cd-line);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, .03);
     }
-    .auth-form-wide fieldset > [class*="col-"] {
+    .auth-form-wide .reg-block.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .auth-form-wide .reg-block-title {
+        grid-column: 1 / -1;
+        margin: 0 0 8px;
+        font-family: 'Sora', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        color: #7fb0ff;
+    }
+    .auth-form-wide .reg-block > [class*="col-"] {
         width: auto;
         float: none;
         padding: 0;
         min-height: 0;
     }
-    .auth-form-wide fieldset > .col-md-12,
-    .auth-form-wide fieldset > .col-sm-12 { grid-column: span 12; }
-    .auth-form-wide fieldset > .col-md-6,
-    .auth-form-wide fieldset > .col-sm-6 { grid-column: span 6; }
-    .auth-form-wide fieldset > .col-md-4 { grid-column: span 4; }
+    .auth-form-wide .reg-block > .col-md-12,
+    .auth-form-wide .reg-block > .col-sm-12 { grid-column: span 12; }
+    .auth-form-wide .reg-block > .col-md-6,
+    .auth-form-wide .reg-block > .col-sm-6 { grid-column: span 6; }
+    .auth-form-wide .reg-block > .col-md-4 { grid-column: span 4; }
     .auth-form-wide fieldset > .clearfix { display: none; }
 
-    .auth-form-wide .form-group { margin-bottom: 34px; }
+    .auth-form-wide .form-group { margin-bottom: 16px; }
     .auth-form-wide .form-group > label {
         display: inline-block;
-        margin-bottom: 10px;
-        font-size: 14px;
+        margin-bottom: 6px;
+        font-size: 13px;
         font-weight: 500;
         letter-spacing: .01em;
     }
@@ -245,22 +265,21 @@
         transform: none;
     }
 
-    @media (max-width: 1100px) {
-        .auth-form-wide fieldset > .col-md-4 { grid-column: span 6; }
-    }
     @media (max-width: 900px) {
-        .auth-main { padding: 20px 18px; }
-        .auth-card { padding: 34px 28px 30px; }
+        .auth-main { padding: 16px 14px; }
+        .auth-card { padding: 26px 18px 22px; }
         .auth-form-wide .wizard > .steps a { justify-content: center; padding: 12px; }
         .auth-form-wide .wizard > .steps a .number { width: 30px; height: 30px; font-size: 13px; }
         .auth-form-wide .wizard > .actions { flex-direction: column; align-items: stretch; }
         .auth-form-wide .wizard > .actions > ul { flex-direction: column; }
         .auth-form-wide .wizard > .actions a { justify-content: center; }
+        .auth-form-wide .reg-block > .col-md-4,
+        .auth-form-wide .reg-block > .col-md-6,
+        .auth-form-wide .reg-block > .col-sm-6 { grid-column: span 12; }
     }
     @media (max-width: 680px) {
-        .auth-card { margin: 8px auto 22px; padding: 26px 18px 24px; }
-        .auth-form-wide .wizard > .content > .body { grid-template-columns: 1fr; }
-        .auth-form-wide fieldset > [class*="col-"] { grid-column: 1 / -1; }
+        .auth-card { margin: 8px auto 22px; padding: 22px 14px 18px; }
+        .auth-form-wide .wizard > .steps > ul { flex-direction: column; gap: 8px; }
     }
 </style>
 @stop
@@ -268,6 +287,7 @@
 @section('content')
 <div class="auth-form auth-form-wide">
     <h1 class="auth-title">@lang('business.register_and_get_started_in_minutes')</h1>
+    <p class="auth-subtitle">@lang('business.register_subtitle')</p>
 
     @if ($errors->any())
         <div class="reg-errors" id="reg_errors">
