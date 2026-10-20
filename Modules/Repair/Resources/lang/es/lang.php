@@ -22,6 +22,7 @@ return [
 "auto_send_sms_tooltip" => "Si está marcada, se enviará una notificación por SMS al cliente para cada actualización",
 "repair_no" => "Número de reparación",
 "repair_status" => "Estado de reparación",
+"repair_status_subtitle" => "Consulta el avance de tu equipo con el número de hoja de trabajo, factura o serie.",
 "repair_details" => "Detalles de reparación",
 "update_note" => "Nota de actualización",
 "activities" => "Ocupaciones",

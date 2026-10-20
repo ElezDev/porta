@@ -1,13 +1,14 @@
-<!-- /.box-header -->
-<div class="box-body">
-    <div class="table-responsive">
-        <table class="table bg-gray">
+<div class="table-responsive">
+    <table class="cd-job-table">
+        <thead>
             <tr>
                 <th>@lang('lang_v1.date')</th>
                 <th>@lang('messages.action')</th>
                 <th>@lang('lang_v1.by')</th>
                 <th>@lang('brand.note')</th>
             </tr>
+        </thead>
+        <tbody>
             @forelse($activities as $activity)
                 @if($activity->description != 'is_sent_notification')
                     <tr>
@@ -19,7 +20,7 @@
                                 {{__('lang_v1.' . $activity->description)}}
                             @endif
                         </td>
-                        <td>{{$activity->causer->user_full_name}}</td>
+                        <td>{{ optional($activity->causer)->user_full_name }}</td>
                         <td>
                             @if(!empty($activity->getExtraProperty('update_note')))
                                 {{$activity->getExtraProperty('update_note')}}
@@ -40,7 +41,6 @@
                   </td>
                 </tr>
             @endforelse
-        </table>
-    </div>
+        </tbody>
+    </table>
 </div>
-<!-- /.box-body -->

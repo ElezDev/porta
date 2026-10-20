@@ -22,6 +22,7 @@ return [
     'auto_send_sms_tooltip' => 'If checked an SMS notification will be sent to the customer for each update',
     'repair_no' => 'Repair Number',
     'repair_status' => 'Repair Status',
+    'repair_status_subtitle' => 'Check your device progress with the job sheet number, invoice or serial.',
     'repair_details' => 'Repair Details',
     'update_note' => 'Update Note',
     'activities' => 'Activities',

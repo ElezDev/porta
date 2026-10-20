@@ -161,7 +161,7 @@
                     <li><a href="{{ action('\Modules\Superadmin\Http\Controllers\PricingController@index') }}" class="{{ request()->routeIs('pricing') ? 'is-active' : '' }}">@lang('superadmin::lang.pricing')</a></li>
                 @endif
                 @if(Route::has('repair-status'))
-                    <li><a href="{{ action('\Modules\Repair\Http\Controllers\CustomerRepairStatusController@index') }}">@lang('repair::lang.repair_status')</a></li>
+                    <li><a href="{{ action('\Modules\Repair\Http\Controllers\CustomerRepairStatusController@index') }}" class="{{ request()->routeIs('repair-status') ? 'is-active' : '' }}">@lang('repair::lang.repair_status')</a></li>
                 @endif
             </ul>
 
