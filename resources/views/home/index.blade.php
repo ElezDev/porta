@@ -8,76 +8,242 @@
     $user_name = trim(Session::get('user.first_name') . ' ' . Session::get('user.last_name'));
 @endphp
 <style type="text/css">
-    /* Elegant home hero */
     .content-wrapper .content-header-custom.home-hero {
-        background: linear-gradient(135deg, #162a56 0%, #1e3f8f 48%, #1572E8 100%) !important;
-        padding: 24px 26px 118px !important;
-        border-radius: 0 0 22px 22px;
-        box-shadow: 0 18px 40px -22px rgba(21, 114, 232, 0.75);
+        position: relative;
+        overflow: hidden;
+        background:
+            radial-gradient(1200px 280px at 88% -40%, rgba(255,255,255,.22), transparent 55%),
+            linear-gradient(135deg, #101c3a 0%, #1b3a82 52%, #1572E8 100%) !important;
+        padding: 28px 28px 132px !important;
+        border-radius: 0 0 28px 28px;
+        box-shadow: 0 22px 48px -24px rgba(16, 28, 58, 0.7);
+    }
+    .home-hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -40px -90px auto;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: rgba(255,255,255,.06);
+        pointer-events: none;
     }
     .content-wrapper .content-custom.home-dashboard {
         margin-top: -118px !important;
+        padding-top: 0 !important;
     }
     .home-hero-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+        position: relative;
+        z-index: 1;
     }
     .home-hero-eyebrow {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 2.2px;
         font-size: 11px;
         font-weight: 700;
-        opacity: .75;
-        margin-bottom: 4px;
+        color: rgba(255,255,255,.78);
+        margin-bottom: 8px;
+    }
+    .home-hero-eyebrow::before {
+        content: "";
+        width: 22px;
+        height: 1px;
+        background: rgba(255,255,255,.55);
     }
     .home-hero-title {
-        margin: 0 0 6px !important;
-        font-size: 26px;
+        margin: 0 0 10px !important;
+        font-size: 28px;
         font-weight: 700;
         color: #fff !important;
-        line-height: 1.25;
+        line-height: 1.2;
+        letter-spacing: -.02em;
     }
     .home-hero-meta {
         margin: 0;
         font-size: 13.5px;
-        opacity: .92;
-        color: #fff;
+        color: rgba(255,255,255,.9);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
     }
-    .home-hero-meta > i {
-        margin-right: 6px;
-    }
+    .home-hero-meta > i { margin-right: 6px; }
     .home-hero-badge {
-        display: inline-block;
-        margin-left: 12px;
-        padding: 2px 12px;
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.18);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.14);
+        border: 1px solid rgba(255,255,255,.16);
         font-weight: 600;
         font-size: 12px;
-        vertical-align: middle;
-    }
-    .home-hero-badge i {
-        margin-right: 4px;
+        backdrop-filter: blur(8px);
     }
     .home-hero-illustration {
-        font-size: 88px;
-        line-height: 1;
-        opacity: .16;
+        width: 92px;
+        height: 92px;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,.08);
+        border: 1px solid rgba(255,255,255,.12);
+        color: #fff;
+        font-size: 38px;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
     }
-    /* Subtle card hover on the dashboard */
-    .home-dashboard .info-box-new-style {
-        transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+    .dash-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        background: rgba(255,255,255,.92);
+        border: 1px solid #e8edf6;
+        border-radius: 16px;
+        padding: 12px 14px;
+        margin-bottom: 18px;
+        box-shadow: 0 18px 40px -24px rgba(16, 24, 40, .45);
+        backdrop-filter: blur(10px);
     }
-    .home-dashboard .info-box-new-style:hover {
+    .dash-toolbar .form-control,
+    .dash-toolbar .select2-container--default .select2-selection--single {
+        border-radius: 10px !important;
+        min-height: 38px;
+        border-color: #dbe3f0;
+    }
+    .dash-toolbar .select2-container { min-width: 220px; }
+    .dash-toolbar #dashboard_date_filter {
+        border-radius: 10px !important;
+        padding: 8px 14px;
+        font-weight: 600;
+        box-shadow: 0 8px 18px -12px rgba(21, 114, 232, .8);
+    }
+    .dash-toolbar-hint {
+        font-size: 12px;
+        color: #64748b;
+        font-weight: 600;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        margin: 0 0 4px;
+    }
+
+    .dash-kpi {
+        width: 100%;
+        min-height: 108px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 16px 16px 18px;
+        background: #fff;
+        border: 1px solid #e8edf6;
+        border-radius: 16px;
+        box-shadow: 0 10px 28px -20px rgba(16, 24, 40, .45);
+        position: relative;
+        overflow: hidden;
+        transition: transform .18s ease, box-shadow .18s ease;
+        margin-bottom: 18px;
+    }
+    .dash-kpi::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--kpi);
+    }
+    .dash-kpi:hover {
         transform: translateY(-3px);
-        box-shadow: 0 14px 28px -14px rgba(16, 24, 40, 0.28) !important;
+        box-shadow: 0 18px 36px -22px rgba(16, 24, 40, .5);
     }
+    .dash-kpi-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--kpi-soft);
+        color: var(--kpi);
+        font-size: 22px;
+        flex-shrink: 0;
+    }
+    .dash-kpi-body { min-width: 0; }
+    .dash-kpi-label {
+        display: block;
+        color: #64748b;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+    .dash-kpi .info-box-number {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.25;
+        word-break: break-word;
+    }
+    .dash-kpi--purchase { --kpi: #4f46e5; --kpi-soft: #eef2ff; }
+    .dash-kpi--sell { --kpi: #059669; --kpi-soft: #ecfdf5; }
+    .dash-kpi--purchase-due { --kpi: #d97706; --kpi-soft: #fffbeb; }
+    .dash-kpi--invoice-due { --kpi: #ea580c; --kpi-soft: #fff7ed; }
+    .dash-kpi--expense { --kpi: #e11d48; --kpi-soft: #fff1f2; }
+    .home-dashboard .row-custom > .col-custom {
+        float: none;
+        width: auto;
+        flex: 1 1 210px;
+        max-width: 100%;
+    }
+
+    .home-dashboard .box {
+        border-radius: 16px !important;
+        border: 1px solid #e8edf6 !important;
+        border-top-color: #e8edf6 !important;
+        box-shadow: 0 10px 28px -20px rgba(16, 24, 40, .4) !important;
+        overflow: hidden;
+    }
+    .home-dashboard .box.box-primary,
+    .home-dashboard .box.box-warning,
+    .home-dashboard .box.box-success,
+    .home-dashboard .box.box-danger,
+    .home-dashboard .box.box-info {
+        border-top-width: 1px !important;
+    }
+    .home-dashboard .box-header {
+        padding: 16px 20px 12px !important;
+        background: linear-gradient(180deg, #fbfcfe 0%, #fff 100%);
+    }
+    .home-dashboard .box-title {
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        color: #0f172a !important;
+        letter-spacing: -.01em;
+    }
+    .home-dashboard .box-body {
+        padding-top: 8px !important;
+    }
+    .home-dashboard .table > thead > tr > th {
+        background: #f8fafc;
+    }
+
     @media (max-width: 767px) {
         .home-hero-illustration { display: none; }
-        .home-hero-title { font-size: 20px; }
+        .home-hero-title { font-size: 22px; }
+        .dash-toolbar { padding: 12px; }
+        .dash-toolbar .select2-container { min-width: 100%; width: 100% !important; }
     }
 </style>
 @stop
@@ -97,116 +263,76 @@
                 @endif
             </p>
         </div>
-        <div class="home-hero-illustration"><i class="fas fa-chart-line"></i></div>
+        <div class="home-hero-illustration" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
     </div>
 </section>
 
 
 <!-- Main content -->
 <section class="content content-custom home-dashboard no-print">
-    <br>
     @if(auth()->user()->can('dashboard.data'))
         @if($is_admin)
-        	<div class="row">
-                <div class="col-md-4 col-xs-12">
+        	<div class="dash-toolbar">
+                <div>
                     @if(count($all_locations) > 1)
+                        <p class="dash-toolbar-hint">{{ __('lang_v1.select_location') }}</p>
                         {!! Form::select('dashboard_location', $all_locations, null, ['class' => 'form-control select2', 'placeholder' => __('lang_v1.select_location'), 'id' => 'dashboard_location']); !!}
                     @endif
                 </div>
-        		<div class="col-md-8 col-xs-12">
-                    <div class="form-group pull-right">
-                          <div class="input-group">
-                            <button type="button" class="btn btn-primary" id="dashboard_date_filter">
-                              <span>
-                                <i class="fa fa-calendar"></i> {{ __('messages.filter_by_date') }}
-                              </span>
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                          </div>
-                    </div>
-        		</div>
+                <div>
+                    <button type="button" class="btn btn-primary" id="dashboard_date_filter">
+                      <span>
+                        <i class="fa fa-calendar"></i> {{ __('messages.filter_by_date') }}
+                      </span>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                </div>
         	</div>
-    	   <br>
     	   <div class="row row-custom">
-            	<div class="col-md-3 col-sm-6 col-xs-12 col-custom">
-            	   <div class="info-box info-box-new-style">
-            	        <span class="info-box-icon bg-aqua"><i class="ion ion-cash"></i></span>
-
-            	        <div class="info-box-content">
-            	          <span class="info-box-text">{{ __('home.total_purchase') }}</span>
+            	<div class="col-sm-6 col-xs-12 col-custom">
+            	   <div class="dash-kpi dash-kpi--purchase">
+            	        <div class="dash-kpi-icon"><i class="ion ion-cash"></i></div>
+            	        <div class="dash-kpi-body">
+            	          <span class="dash-kpi-label">{{ __('home.total_purchase') }}</span>
             	          <span class="info-box-number total_purchase"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>
             	        </div>
-            	        <!-- /.info-box-content -->
             	   </div>
-        	       <!-- /.info-box -->
         	    </div>
-        	    <!-- /.col -->
-        	    <div class="col-md-3 col-sm-6 col-xs-12 col-custom">
-        	       <div class="info-box info-box-new-style">
-            	        <span class="info-box-icon bg-aqua"><i class="ion ion-ios-cart-outline"></i></span>
-
-            	        <div class="info-box-content">
-            	          <span class="info-box-text">{{ __('home.total_sell') }}</span>
+        	    <div class="col-sm-6 col-xs-12 col-custom">
+        	       <div class="dash-kpi dash-kpi--sell">
+            	        <div class="dash-kpi-icon"><i class="ion ion-ios-cart-outline"></i></div>
+            	        <div class="dash-kpi-body">
+            	          <span class="dash-kpi-label">{{ __('home.total_sell') }}</span>
             	          <span class="info-box-number total_sell"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>
             	        </div>
-            	        <!-- /.info-box-content -->
         	       </div>
-        	      <!-- /.info-box -->
         	    </div>
-        	    <!-- /.col -->
-        	    <div class="col-md-3 col-sm-6 col-xs-12 col-custom">
-        	       <div class="info-box info-box-new-style">
-            	        <span class="info-box-icon bg-yellow">
-            	        	<i class="fa fa-dollar"></i>
-            				<i class="fa fa-exclamation"></i>
-            	        </span>
-
-            	        <div class="info-box-content">
-            	          <span class="info-box-text">{{ __('home.purchase_due') }}</span>
+        	    <div class="col-sm-6 col-xs-12 col-custom">
+        	       <div class="dash-kpi dash-kpi--purchase-due">
+            	        <div class="dash-kpi-icon"><i class="fas fa-exclamation-circle"></i></div>
+            	        <div class="dash-kpi-body">
+            	          <span class="dash-kpi-label">{{ __('home.purchase_due') }}</span>
             	          <span class="info-box-number purchase_due"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>
             	        </div>
-            	        <!-- /.info-box-content -->
         	       </div>
-        	      <!-- /.info-box -->
         	    </div>
-        	    <!-- /.col -->
-
-    	       <!-- fix for small devices only -->
-        	    <!-- <div class="clearfix visible-sm-block"></div> -->
-        	    <div class="col-md-3 col-sm-6 col-xs-12 col-custom">
-        	        <div class="info-box info-box-new-style">
-        	           <span class="info-box-icon bg-yellow">
-            	        	<i class="ion ion-ios-paper-outline"></i>
-            	        	<i class="fa fa-exclamation"></i>
-        	           </span>
-
-            	        <div class="info-box-content">
-            	          <span class="info-box-text">{{ __('home.invoice_due') }}</span>
+        	    <div class="col-sm-6 col-xs-12 col-custom">
+        	        <div class="dash-kpi dash-kpi--invoice-due">
+        	           <div class="dash-kpi-icon"><i class="ion ion-ios-paper-outline"></i></div>
+            	        <div class="dash-kpi-body">
+            	          <span class="dash-kpi-label">{{ __('home.invoice_due') }}</span>
             	          <span class="info-box-number invoice_due"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>
             	        </div>
-            	        <!-- /.info-box-content -->
         	        </div>
-        	      <!-- /.info-box -->
         	    </div>
-    	    <!-- /.col -->
-            </div>
-          	<div class="row row-custom">
-                <!-- expense -->
-                <div class="col-md-3 col-sm-6 col-xs-12 col-custom">
-                    <div class="info-box info-box-new-style">
-                        <span class="info-box-icon bg-red">
-                          <i class="fas fa-minus-circle"></i>
-                        </span>
-
-                        <div class="info-box-content">
-                          <span class="info-box-text">
-                            {{ __('lang_v1.expense') }}
-                          </span>
+                <div class="col-sm-6 col-xs-12 col-custom">
+                    <div class="dash-kpi dash-kpi--expense">
+                        <div class="dash-kpi-icon"><i class="fas fa-minus-circle"></i></div>
+                        <div class="dash-kpi-body">
+                          <span class="dash-kpi-label">{{ __('lang_v1.expense') }}</span>
                           <span class="info-box-number total_expense"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>
                         </div>
-                        <!-- /.info-box-content -->
                     </div>
-                  <!-- /.info-box -->
                 </div>
             </div>
             @if(!empty($widgets['after_sale_purchase_totals']))
