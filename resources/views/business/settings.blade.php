@@ -197,9 +197,168 @@
         });
     });
 
-    $('.colorpicker-component').colorpicker({ format: 'hex' });
+    var themePresets = {
+        navy: {
+            header_color: '#162A56',
+            sidebar_color: '#0C1A38',
+            primary_color: '#1E3F8F',
+            success_color: '#C9A227',
+            warning_color: '#B7791F',
+            danger_color: '#C53030',
+            info_color: '#3B6EA5'
+        },
+        midnight: {
+            header_color: '#111827',
+            sidebar_color: '#030712',
+            primary_color: '#4F46E5',
+            success_color: '#10B981',
+            warning_color: '#F59E0B',
+            danger_color: '#F43F5E',
+            info_color: '#38BDF8'
+        },
+        emerald: {
+            header_color: '#064E3B',
+            sidebar_color: '#022C22',
+            primary_color: '#059669',
+            success_color: '#10B981',
+            warning_color: '#D97706',
+            danger_color: '#E11D48',
+            info_color: '#0EA5E9'
+        },
+        burgundy: {
+            header_color: '#4A1528',
+            sidebar_color: '#2A0D18',
+            primary_color: '#9F1239',
+            success_color: '#C9A227',
+            warning_color: '#B45309',
+            danger_color: '#BE123C',
+            info_color: '#7C3AED'
+        },
+        ocean: {
+            header_color: '#0E4D6B',
+            sidebar_color: '#083344',
+            primary_color: '#0284C7',
+            success_color: '#0D9488',
+            warning_color: '#D97706',
+            danger_color: '#E11D48',
+            info_color: '#38BDF8'
+        },
+        graphite: {
+            header_color: '#1F2937',
+            sidebar_color: '#111827',
+            primary_color: '#4B5563',
+            success_color: '#D97706',
+            warning_color: '#CA8A04',
+            danger_color: '#DC2626',
+            info_color: '#64748B'
+        }
+    };
+
+    function hexToRgb(hex) {
+        hex = (hex || '').replace('#', '');
+        if (hex.length === 3) {
+            hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+        }
+        var n = parseInt(hex, 16);
+        if (isNaN(n)) {
+            return '0, 0, 0';
+        }
+        return ((n >> 16) & 255) + ', ' + ((n >> 8) & 255) + ', ' + (n & 255);
+    }
+
+    function shadeHex(hex, percent) {
+        hex = (hex || '').replace('#', '');
+        if (hex.length === 3) {
+            hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+        }
+        var num = parseInt(hex, 16);
+        if (isNaN(num)) {
+            return hex;
+        }
+        var r = (num >> 16) & 255;
+        var g = (num >> 8) & 255;
+        var b = num & 255;
+        var amt = percent / 100;
+        if (amt < 0) {
+            r = Math.round(r * (1 + amt));
+            g = Math.round(g * (1 + amt));
+            b = Math.round(b * (1 + amt));
+        } else {
+            r = Math.round(r + (255 - r) * amt);
+            g = Math.round(g + (255 - g) * amt);
+            b = Math.round(b + (255 - b) * amt);
+        }
+        return '#' + ((1 << 24) + (Math.max(0, Math.min(255, r)) << 16) + (Math.max(0, Math.min(255, g)) << 8) + Math.max(0, Math.min(255, b))).toString(16).slice(1).toUpperCase();
+    }
+
+    function onColor(hex) {
+        hex = (hex || '').replace('#', '');
+        if (hex.length === 3) {
+            hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+        }
+        var n = parseInt(hex, 16);
+        if (isNaN(n)) {
+            return '#FFFFFF';
+        }
+        var r = (n >> 16) & 255;
+        var g = (n >> 8) & 255;
+        var b = n & 255;
+        return ((0.299 * r + 0.587 * g + 0.114 * b) / 255) > 0.62 ? '#111827' : '#FFFFFF';
+    }
+
+    function applyThemePreview() {
+        var map = {
+            header: 'header_color',
+            sidebar: 'sidebar_color',
+            primary: 'primary_color',
+            success: 'success_color',
+            warning: 'warning_color',
+            danger: 'danger_color',
+            info: 'info_color'
+        };
+        var root = document.documentElement;
+        Object.keys(map).forEach(function (key) {
+            var val = $('input[name="theme_settings[' + map[key] + ']"]').val();
+            if (!val) {
+                return;
+            }
+            root.style.setProperty('--ui-' + key, val);
+            root.style.setProperty('--ui-' + key + '-hover', shadeHex(val, -14));
+            root.style.setProperty('--ui-' + key + '-rgb', hexToRgb(val));
+            root.style.setProperty('--ui-on-' + key, onColor(val));
+            if (key === 'primary') {
+                root.style.setProperty('--ui-brand', val);
+                root.style.setProperty('--ui-brand-2', shadeHex(val, 12));
+            }
+            if (key === 'header') {
+                root.style.setProperty('--ui-header-2', shadeHex(val, -12));
+            }
+            if (key === 'sidebar') {
+                root.style.setProperty('--ui-sidebar-2', shadeHex(val, 10));
+            }
+        });
+    }
+
+    $('.colorpicker-component').colorpicker({ format: 'hex' }).on('changeColor', applyThemePreview);
+    $('.theme-color-input').on('change blur', applyThemePreview);
+
+    $('.theme-preset').on('click', function() {
+        var preset = themePresets[$(this).data('preset')];
+        if (!preset) {
+            return;
+        }
+        $('.theme-preset').removeClass('is-active');
+        $(this).addClass('is-active');
+        Object.keys(preset).forEach(function (key) {
+            var $input = $('input[name="theme_settings[' + key + ']"]');
+            $input.val(preset[key]);
+            $input.closest('.colorpicker-component').colorpicker('setValue', preset[key]);
+        });
+        applyThemePreview();
+    });
 
     $('#reset_theme').on('click', function() {
+        $('.theme-preset').removeClass('is-active');
         $('.colorpicker-component input').val('');
         $('.colorpicker-component .input-group-addon i').css('background-color', 'transparent');
     });

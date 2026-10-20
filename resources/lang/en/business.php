@@ -109,4 +109,13 @@ return [
     'header' => 'Header',
     'sidebar' => 'Sidebar',
     'primary' => 'Primary',
+    'theme_studio' => 'Premium appearance',
+    'theme_studio_help' => 'Pick a ready-made look or customize header, sidebar and button colors. Changes apply across the whole system after saving.',
+    'theme_presets' => 'Ready-made styles',
+    'theme_preview' => 'Button preview',
+    'theme_btn_primary' => 'Primary',
+    'theme_btn_success' => 'Success',
+    'theme_btn_warning' => 'Warning',
+    'theme_btn_danger' => 'Danger',
+    'theme_btn_info' => 'Info',
 ];

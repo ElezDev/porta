@@ -444,8 +444,9 @@ class BusinessController extends Controller
 
             $business_details['common_settings'] = !empty($request->input('common_settings')) ? $request->input('common_settings') : [];
 
-            //Custom theme colors (header/sidebar/primary)
-            $business_details['theme_settings'] = array_filter((array) $request->input('theme_settings', [])) ?: null;
+            // Custom theme colors (header, sidebar and system buttons)
+            $theme_settings = \App\Support\Theme::sanitize($request->input('theme_settings', []));
+            $business_details['theme_settings'] = $theme_settings ?: null;
 
             //Enabled modules
             $enabled_modules = $request->input('enabled_modules');

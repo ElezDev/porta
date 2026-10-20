@@ -99,4 +99,13 @@
 "header"=>"Cabecera",
 "sidebar"=>"Menú lateral",
 "primary"=>"Primario",
+"theme_studio" => "Apariencia premium",
+"theme_studio_help" => "Elige un estilo listo o personaliza cabecera, menú y colores de botones. Al guardar se aplica en todo el sistema.",
+"theme_presets" => "Estilos listos",
+"theme_preview" => "Vista previa de botones",
+"theme_btn_primary" => "Primario",
+"theme_btn_success" => "Éxito",
+"theme_btn_warning" => "Alerta",
+"theme_btn_danger" => "Peligro",
+"theme_btn_info" => "Info",
 ];

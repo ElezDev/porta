@@ -13,7 +13,7 @@
         overflow: hidden;
         background:
             radial-gradient(1200px 280px at 88% -40%, rgba(255,255,255,.22), transparent 55%),
-            linear-gradient(135deg, #101c3a 0%, #1b3a82 52%, #1572E8 100%) !important;
+            linear-gradient(135deg, var(--ui-header) 0%, var(--ui-brand) 52%, var(--ui-primary) 100%) !important;
         padding: 28px 28px 132px !important;
         border-radius: 0 0 28px 28px;
         box-shadow: 0 22px 48px -24px rgba(16, 28, 58, 0.7);
